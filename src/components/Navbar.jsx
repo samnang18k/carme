@@ -39,7 +39,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className='flex items-center justify-between px-15 dark:bg-gray-800'>
+    <nav className='flex items-center justify-between px-15 dark:bg-gray-950'>
       <div className='w-45 shrink-0'>
         <img src={darkMode ? logodark : logo} alt="" />
       </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
           }
         </button>
         {openMenu && (
-  <div className="md:hidden absolute right-5 w-full items-center dark:bg-gray-800 flex flex-col gap-4 p-5 bg-white shadow-lg">
+  <div className="md:hidden absolute z-99 right-5 w-full items-center dark:bg-gray-800 flex flex-col gap-4 p-5 bg-white shadow-lg">
 
     {NavItems.map((item) => (
       <NavLink
