@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png'
 import logodark from '../assets/logo-dark.png'
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import {Menu, Moon , Sun, X} from 'lucide-react'
 import { useTheme } from "../Context/ThemeContext";
 
@@ -64,7 +64,7 @@ const Navbar = () => {
                     :(<Moon size={22} className="text-gray-700 hover:text-white" />)}
         </button>
         <button className='btn rounded-sm w-23 shadow-none border-0 bg-blue-400 text-white'>
-          login
+          <Link to='/login'>login</Link>
         </button>
       </div>
       <div className='md:hidden'>
